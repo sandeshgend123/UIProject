@@ -1,0 +1,106 @@
+ /* Base */
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+.guides-container {
+ /*  max-width: 700px; */
+  margin: 56px auto;
+  /* background: #fff;
+  padding: 28px 32px; */
+  border-radius: 10px;
+  /* box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center; */
+}
+
+/* Dropdown (click-to-open with details/summary) */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Remove default marker */
+.dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+.dropdown summary::-webkit-details-marker { display: none; }
+
+/* Button look */
+.dropbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  /* background: #000;
+  color: #fff; */
+  border: 0;
+  padding: 12px 18px;
+  /* border-radius: 6px; */
+  font-size: 16px;
+  user-select: none;
+  outline: none;
+}
+
+.dropbtn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+
+.chev {
+  transition: transform 0.2s ease;
+}
+
+/* Menu panel */
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 240px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  padding: 8px 0;
+  display: none; /* hidden by default; shown when details[open] */
+  z-index: 20;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background: gray;
+}
+
+
+/* Show menu when dropdown is open */
+.dropdown[open] .menu {
+  display: block;
+}
+
+/* Flip arrow when dropdown is open */
+.dropdown[open] .chev {
+  transform: rotate(180deg);
+}
+
+
+
+/* Mobile: make the menu full-width under the button 
+@media (max-width: 480px) {
+  .menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid #eee;
+    margin-top: 10px;
+  }
+}*/

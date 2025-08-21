@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Nike Store</title>
+  <link rel="stylesheet" href="Find_a_store.css">
+</head>
+<body>
+
+  <!-- Top small bar -->
+<div class="top-bar-icon">
+    <div class="left-icon">
+        <img src="j.png" alt="Jordan Logo">
+    </div>
+    <div class="top-bar">
+        <a href="Find_a_store.html">Find a Store</a> 
+        <a href="Get_help.html">Help</a> 
+        <a href="Join_us.html">Join Us</a> 
+        <a href="sign_in.html">Sign In</a>
+    </div>
+</div>
+
+<!-- Main navbar -->
+<div class="navbar">
+    <div class="left-icons">
+        <img src="download.png" alt="Nike Logo">
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+        <a href="#">New & Featured</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Sale</a>
+        <a href="#">SNKRS</a>
+    </div>
+
+    <div class="right-icons">
+        <div class="search-box">
+            🔍 <input type="text" placeholder="Search">
+        </div>
+        ❤️
+        🛒
+    </div>
+</div>
+
+
+
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="sidebar">
+      <h2>Find a Nike Store</h2>
+      <br>
+      <!-- <div class="search-box">
+        <input type="text" placeholder="Search Location"> 
+        
+      </div> -->
+      <form class="search-box" action="https://www.google.com/maps/search/" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search Location">
+        <button type="submit" class="filter-btn">Search</button>
+      </form>
+
+        <div class="btn">
+            <p class="stores-count">15 Stores Near You</p>
+            <button class="filter-btn">Filter</button>
+        </div>
+        <br>
+      <hr>
+
+      <div class="store-list">
+        <div class="store">
+          <h2>Nike Factory Store</h2>
+          <p>Shop No.3 Meena CHS, Paud Rd, opp. Vanaz Company, Kothrud, Pune, Maharashtra 411038</p>
+          <p class="open">Open • Closes at 9:00 pm</p>
+        </div>
+      <hr>
+        <div class="store">
+          <h2>Nike Kamla Nagar</h2>
+          <p>SN 308, MG Road, opp. <br>
+            The Raymond shop, Camp, Pune, Maharashtra 411001</p>
+            <p class="open">Open • Closes at 10:00 pm</p>
+        </div>
+      </div>
+    <hr>
+      <a href="#" class="view-all">View all stores</a>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="map">
+      <!-- <video src=""></video> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d121111.45355203631!2d73.80774910947872!3d18.45043159906821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snike%20stores%20near%20by%20me%20map!5e0!3m2!1sen!2sin!4v1755330407818!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+</html>
